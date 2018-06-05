@@ -10,5 +10,9 @@ namespace AntroLaNocheSigue.COMMON.Entidades
         public string Nombre { get; set; }
         public string Domicilio { get; set; }
         public Byte[] Foto { get; set; }
+        public override string ToString()
+        {
+            return string.Format("{0}",Nombre);
+        }
     }
 }

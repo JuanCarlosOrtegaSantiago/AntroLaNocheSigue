@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AntroLaNocheSigue.COMMON.Interfaces
 {
-    public interface IManegadorDeClientes:IManejadorDeReguistroDeEntradas<Cliente>
+    public interface IManegadorDeClientes:IManejadorGenerico<Cliente>
     {
     }
 }

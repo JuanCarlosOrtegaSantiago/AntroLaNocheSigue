@@ -5,7 +5,8 @@ using System.Text;
 
 namespace AntroLaNocheSigue.COMMON.Interfaces
 {
-    public interface IManejadorDeReguistroDeEntradas:IManejadorDeReguistroDeEntradas<ReguistroDeEntradas>
+    public interface IManejadorDeReguistroDeEntradas:IManejadorGenerico<ReguistroDeEntradas>
     {
+        List<ReguistroDeEntradas> ReguistroDeEntradas(DateTime Fecha);
     }
 }

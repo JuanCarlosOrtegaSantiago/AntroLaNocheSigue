@@ -8,5 +8,6 @@ namespace AntroLaNocheSigue.COMMON.Entidades
     {
         public Empleado Empleado { get; set; }
         public List<Cliente> Clientes { get; set; }
+        public DateTime FechaDeEntarda { get; set; }
     }
 }

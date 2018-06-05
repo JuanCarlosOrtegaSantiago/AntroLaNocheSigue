@@ -6,11 +6,8 @@ using System.Text;
 
 namespace AntroLaNocheSigue.COMMON.Interfaces
 {
-    public interface IManejadorGenerico<T> where T : Base
+    public interface IManejadorDeContrasena:IManejadorGenerico<Contrasena>
     {
-        bool Agregar(T Entidad);
-        List<T> Listar { get; }
-        bool Eliminar(ObjectId Id);
-        bool Editar(T entidad);
+        Contrasena buscaPorId(ObjectId Id);
     }
 }

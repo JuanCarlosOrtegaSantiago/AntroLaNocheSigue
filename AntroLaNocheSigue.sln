@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntroLaNocheSigue.DAL", "An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntroLaNocheSigue.BIZ", "AntroLaNocheSigue.BIZ\AntroLaNocheSigue.BIZ.csproj", "{14B59F35-271E-40A1-A7F5-E15088CBF461}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntroLaNocheSigue.GUI.Escritorio.Administrador", "AntroLaNocheSigue.GUI.Escritorio.Administrador\AntroLaNocheSigue.GUI.Escritorio.Administrador.csproj", "{B15A87DD-1496-4EA9-9061-A030C2EF5367}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{14B59F35-271E-40A1-A7F5-E15088CBF461}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14B59F35-271E-40A1-A7F5-E15088CBF461}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14B59F35-271E-40A1-A7F5-E15088CBF461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15A87DD-1496-4EA9-9061-A030C2EF5367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15A87DD-1496-4EA9-9061-A030C2EF5367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15A87DD-1496-4EA9-9061-A030C2EF5367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15A87DD-1496-4EA9-9061-A030C2EF5367}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

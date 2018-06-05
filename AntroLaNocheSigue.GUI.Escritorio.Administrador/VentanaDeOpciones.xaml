@@ -1,0 +1,50 @@
+﻿<Window x:Class="AntroLaNocheSigue.GUI.Escritorio.Administrador.VentanaDeOpciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AntroLaNocheSigue.GUI.Escritorio.Administrador"
+        mc:Ignorable="d"
+        Title="VentanaDeOpciones" Height="500" Width="500">
+    
+    <Window.Background>
+        <ImageBrush ImageSource="imagenes/Fondo.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel  HorizontalAlignment="Center" Grid.Row="1" Grid.RowSpan="4" Grid.Column="2" Grid.ColumnSpan="5">
+            <WrapPanel HorizontalAlignment="Center">
+                <Image Source="imagenes/Ico.png"></Image>
+            </WrapPanel>
+        </WrapPanel>
+        <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="5">
+            <Label >Elija la operacion a realziar</Label>
+            <ComboBox x:Name="cmbxOperacion" Width="150" SelectionChanged="cmbxOperacion_SelectionChanged">
+                <ComboBoxItem x:Name="itemSelecciona" HorizontalAlignment="Center">Selecciona tu opcion</ComboBoxItem>
+                <ComboBoxItem x:Name="itemReguistros" HorizontalAlignment="Center">Reguistros</ComboBoxItem>
+                <ComboBoxItem x:Name="itemCambiarContrasena" HorizontalAlignment="Center">Cambiar de contraseña</ComboBoxItem>
+            </ComboBox>
+        </WrapPanel>
+    </Grid>
+
+</Window>
