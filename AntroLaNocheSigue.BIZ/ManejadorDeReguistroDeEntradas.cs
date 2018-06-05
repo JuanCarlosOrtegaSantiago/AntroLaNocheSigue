@@ -32,9 +32,9 @@ namespace AntroLaNocheSigue.BIZ
             return repositorio.Eliminar(Id);
         }
 
-        public List<ReguistroDeEntradas> ReguistroDeEntradas(DateTime Fecha)
-        {
-            return repositorio.listar.Where(e => e.FechaDeEntarda.ToShortDateString() == Fecha.ToShortDateString()).ToList();
-        }
+        //public List<ReguistroDeEntradas> ReguistroDeEntradas(DateTime Fecha)
+        //{
+        //    return repositorio.listar.Where(e => e.FechaDeEntarda.ToShortDateString() == Fecha.ToShortDateString()).ToList();
+        //}
     }
 }

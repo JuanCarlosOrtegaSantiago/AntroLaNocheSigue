@@ -38,7 +38,7 @@ namespace AntroLaNocheSigue.GUI.Escritorio.Administrador
         {
             InitializeComponent();
 
-            manejadorDeEmpleado = new ManejadorDeEmpleados(new RepositorioGenerico<Empleado>());
+            manejadorDeEmpleado = new ManejadorDeEmpleados(new RepositorioGenerico<Trabajador>());
             manejadorDeClientesVip = new ManejadorDeClienteVip(new RepositorioGenerico<ClienteVip>());
 
             ActualizarTablaDeEmpleado();
@@ -351,7 +351,7 @@ namespace AntroLaNocheSigue.GUI.Escritorio.Administrador
         {
             if (manejadorDeEmpleado.Listar.Count != 0)
             {
-                Empleado empleado = lstvEmpleados.SelectedItem as Empleado;
+                Trabajador empleado = lstvEmpleados.SelectedItem as Trabajador;
                 if (empleado != null)
                 {
                     LimpiarCamposDeEmpleado(true);
@@ -379,7 +379,7 @@ namespace AntroLaNocheSigue.GUI.Escritorio.Administrador
         {
             if (manejadorDeEmpleado.Listar.Count != 0)
             {
-                Empleado empleado = lstvEmpleados.SelectedItem as Empleado;
+                Trabajador empleado = lstvEmpleados.SelectedItem as Trabajador;
                 if (empleado != null)
                 {
 
@@ -417,7 +417,7 @@ namespace AntroLaNocheSigue.GUI.Escritorio.Administrador
                 {
                     if (!string.IsNullOrWhiteSpace(tbxCargoDeEmpleado.Text) && !string.IsNullOrWhiteSpace(tbxNombreDeEmpleado.Text) && !string.IsNullOrWhiteSpace(tbxClaveDeElectorDeEmpleado.Text) && !string.IsNullOrWhiteSpace(tbxDomicilioDeEmpleado.Text))
                     {
-                        Empleado empleado = new Empleado()
+                        Trabajador empleado = new Trabajador()
                         {
                             Cargo = tbxCargoDeEmpleado.Text,
                             Nombre = tbxNombreDeEmpleado.Text,
@@ -450,7 +450,7 @@ namespace AntroLaNocheSigue.GUI.Escritorio.Administrador
                 {
                     if (!string.IsNullOrWhiteSpace(tbxCargoDeEmpleado.Text) && !string.IsNullOrWhiteSpace(tbxNombreDeEmpleado.Text) && !string.IsNullOrWhiteSpace(tbxClaveDeElectorDeEmpleado.Text) && !string.IsNullOrWhiteSpace(tbxDomicilioDeEmpleado.Text))
                     {
-                        Empleado empleado = lstvEmpleados.SelectedItem as Empleado;
+                        Trabajador empleado = lstvEmpleados.SelectedItem as Trabajador;
 
                         empleado.ClaveDeElector = tbxClaveDeElectorCliente.Text;
                         empleado.Cargo = tbxCargoDeEmpleado.Text;

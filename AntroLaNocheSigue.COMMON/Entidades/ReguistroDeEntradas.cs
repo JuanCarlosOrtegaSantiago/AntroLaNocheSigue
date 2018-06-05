@@ -6,8 +6,8 @@ namespace AntroLaNocheSigue.COMMON.Entidades
 {
     public class ReguistroDeEntradas:Base
     {
-        public Empleado Empleado { get; set; }
+        public Trabajador Empleado { get; set; }
         public List<Cliente> Clientes { get; set; }
-        public DateTime FechaDeEntarda { get; set; }
+        //public DateTime FechaDeEntarda { get; set; }
     }
 }

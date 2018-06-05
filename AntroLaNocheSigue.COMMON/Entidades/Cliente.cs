@@ -6,6 +6,6 @@ namespace AntroLaNocheSigue.COMMON.Entidades
 {
     public class Cliente:Persona
     {
-        public DateTime? HoraDeEntrada { get; set; }
+        public List<DateTime?> HoraDeEntrada { get; set; }
     }
 }

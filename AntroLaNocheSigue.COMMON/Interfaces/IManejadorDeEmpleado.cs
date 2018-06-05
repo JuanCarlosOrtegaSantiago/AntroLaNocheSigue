@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AntroLaNocheSigue.COMMON.Interfaces
 {
-    public interface IManejadorDeEmpleado:IManejadorGenerico<Empleado>
+    public interface IManejadorDeEmpleado:IManejadorGenerico<Trabajador>
     {
     }
 }

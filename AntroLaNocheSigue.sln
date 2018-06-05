@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntroLaNocheSigue.COMMON", "AntroLaNocheSigue.COMMON\AntroLaNocheSigue.COMMON.csproj", "{1BD24CD1-AD80-4C75-A522-D8A03721D891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntroLaNocheSigue.COMMON", "AntroLaNocheSigue.COMMON\AntroLaNocheSigue.COMMON.csproj", "{1BD24CD1-AD80-4C75-A522-D8A03721D891}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntroLaNocheSigue.DAL", "AntroLaNocheSigue.DAL\AntroLaNocheSigue.DAL.csproj", "{640123EE-D0A6-435B-89D2-26C89BA80FA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntroLaNocheSigue.DAL", "AntroLaNocheSigue.DAL\AntroLaNocheSigue.DAL.csproj", "{640123EE-D0A6-435B-89D2-26C89BA80FA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntroLaNocheSigue.BIZ", "AntroLaNocheSigue.BIZ\AntroLaNocheSigue.BIZ.csproj", "{14B59F35-271E-40A1-A7F5-E15088CBF461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntroLaNocheSigue.BIZ", "AntroLaNocheSigue.BIZ\AntroLaNocheSigue.BIZ.csproj", "{14B59F35-271E-40A1-A7F5-E15088CBF461}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntroLaNocheSigue.GUI.Escritorio.Administrador", "AntroLaNocheSigue.GUI.Escritorio.Administrador\AntroLaNocheSigue.GUI.Escritorio.Administrador.csproj", "{B15A87DD-1496-4EA9-9061-A030C2EF5367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntroLaNocheSigue.GUI.Escritorio.Empleado", "AntroLaNocheSigue.GUI.Escritorio.Empleado\AntroLaNocheSigue.GUI.Escritorio.Empleado.csproj", "{3D788ECE-FD84-480E-877E-0BDF828C731D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B15A87DD-1496-4EA9-9061-A030C2EF5367}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B15A87DD-1496-4EA9-9061-A030C2EF5367}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B15A87DD-1496-4EA9-9061-A030C2EF5367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D788ECE-FD84-480E-877E-0BDF828C731D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D788ECE-FD84-480E-877E-0BDF828C731D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D788ECE-FD84-480E-877E-0BDF828C731D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D788ECE-FD84-480E-877E-0BDF828C731D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

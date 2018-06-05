@@ -7,6 +7,6 @@ namespace AntroLaNocheSigue.COMMON.Interfaces
 {
     public interface IManejadorDeReguistroDeEntradas:IManejadorGenerico<ReguistroDeEntradas>
     {
-        List<ReguistroDeEntradas> ReguistroDeEntradas(DateTime Fecha);
+        //List<ReguistroDeEntradas> ReguistroDeEntradas(DateTime Fecha);
     }
 }

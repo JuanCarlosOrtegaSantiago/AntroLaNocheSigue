@@ -9,19 +9,19 @@ namespace AntroLaNocheSigue.BIZ
 {
     public class ManejadorDeEmpleados : IManejadorDeEmpleado
     {
-        IRepositorio<Empleado> repositorio;
-        public ManejadorDeEmpleados(IRepositorio<Empleado> repositorio)
+        IRepositorio<Trabajador> repositorio;
+        public ManejadorDeEmpleados(IRepositorio<Trabajador> repositorio)
         {
             this.repositorio = repositorio;
         }
-        public List<Empleado> Listar => repositorio.listar;
+        public List<Trabajador> Listar => repositorio.listar;
 
-        public bool Agregar(Empleado Entidad)
+        public bool Agregar(Trabajador Entidad)
         {
             return repositorio.Crear(Entidad);
         }
 
-        public bool Editar(Empleado entidad)
+        public bool Editar(Trabajador entidad)
         {
             return repositorio.Editar(entidad);
         }
