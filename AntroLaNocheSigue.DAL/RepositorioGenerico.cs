@@ -26,6 +26,7 @@ namespace AntroLaNocheSigue.DAL
 
         public List<T> listar => collection().AsQueryable().ToList();
 
+
         public bool Crear(T entidad)
         {
             try

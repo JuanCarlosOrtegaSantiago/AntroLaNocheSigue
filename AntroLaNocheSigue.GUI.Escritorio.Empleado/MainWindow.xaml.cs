@@ -34,29 +34,34 @@ namespace AntroLaNocheSigue.GUI.Escritorio.Empleado
             manejadorDeClientesVip = new ManejadorDeClienteVip(new RepositorioGenerico<ClienteVip>());
             manejadorDeReguistroDeEntradas = new ManejadorDeReguistroDeEntradas(new RepositorioGenerico<ReguistroDeEntradas>());
 
-            cmbxClienteVip.ItemsSource = manejadorDeClientesVip.Listar;
-
             PanelClienteNormal.Visibility = Visibility.Collapsed;
             PanelClienteVip.Visibility = Visibility.Collapsed;
+
         }
 
         private void btnClienteVip_Click(object sender, RoutedEventArgs e)
         {
             PanelClienteNormal.Visibility = Visibility.Collapsed;
             PanelClienteVip.Visibility = Visibility.Visible;
+            btnClienteNuevo.IsEnabled = true;
+            btnClienteVip.IsEnabled = false;
+            cmbxDeClienteVips.ItemsSource = manejadorDeClientesVip.Listar;
+
         }
 
         private void btnClienteNuevo_Click(object sender, RoutedEventArgs e)
         {
             PanelClienteNormal.Visibility = Visibility.Visible;
             PanelClienteVip.Visibility = Visibility.Collapsed;
+            btnClienteNuevo.IsEnabled = false;
+            btnClienteVip.IsEnabled = true;
         }
 
         private void cmbxClienteVip_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (cmbxClienteVip.SelectedItem != null)
+            if (cmbxDeClienteVips.SelectedItem != null)
             {
-                ClienteVip cliente = cmbxClienteVip.SelectedItem as ClienteVip;
+                ClienteVip cliente = cmbxDeClienteVips.SelectedItem as ClienteVip;
                 if (cliente.HoraDeEntrada.Count < 1)
                 {
                     cliente.HoraDeEntrada = new List<DateTime?>();
@@ -64,7 +69,7 @@ namespace AntroLaNocheSigue.GUI.Escritorio.Empleado
                 }
                 else
                 {
-                    cliente.HoraDeEntrada.Add(DateTime.Now);
+                    cliente.HoraDeEntrada.Add(DateTime.Today);
                 }
 
 

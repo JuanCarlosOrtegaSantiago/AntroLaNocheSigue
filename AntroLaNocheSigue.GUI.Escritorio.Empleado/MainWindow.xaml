@@ -53,7 +53,7 @@
         </WrapPanel>
         
         <WrapPanel x:Name="PanelClienteVip" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="5">
-            <ComboBox x:Name="cmbxClienteVip" Width="150" SelectionChanged="cmbxClienteVip_SelectionChanged"></ComboBox>
+            <ComboBox x:Name="cmbxDeClienteVips" Width="150"></ComboBox>
         </WrapPanel>
         <WrapPanel x:Name="PanelClienteNormal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="5">
             <WrapPanel>
